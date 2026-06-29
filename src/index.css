@@ -1,0 +1,27 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  background: #000;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Убираем стандартный скролл-бар */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #000; }
+::-webkit-scrollbar-thumb { background: #1c1c1c; border-radius: 2px; }
+
+/* Убираем outline на кнопках внутри Mini App */
+button:focus { outline: none; }
+input:focus, textarea:focus, select:focus { outline: none; }
+
+/* Нативный выбор цвета для чекбоксов */
+input[type="checkbox"] { accent-color: #00d2d3; }
